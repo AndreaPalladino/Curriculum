@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      :root{
+   --dieci:rgb(219, 84, 5);
+}
+
+.text10{
+   color:var(--dieci);
+}
+.background{
+    background-color: rgb(148, 176, 202);
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: rgb(219, 84, 5);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #060707;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+ video{
+   object-fit: cover;
+ }
+  
+  .bar{
+      width:0.1%;
+      height:280px;
+      background-color: rgba(0,0,0,0.5);
+  }
+
+  .blocco{
+    position: fixed;
+     height:750px;
+     width:347px;
+     overflow-x: 100px;
+     z-index:999;
+     background-color: black;
+     border: 2px solid white;
+  }
+
+  @media screen and (max-width:600){
+    .blocco{
+      position: fixed;
+       height:750px;
+       width:360px;
+       overflow-x: hidden;
+       z-index:0 !important;
+       background-color: black;
+       border: 2px solid white;
+    }
+  }
+
+  body{
+    background-image: url('media/bk.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: rgb(219, 84, 5);
+    transition: width .6s ease;
+}
+
+.h2{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.2em;
+  color:white;
+}
+
+h2 span{
+  display: inline-block;
+  animation: animate 1s linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+
+h2 span:nth-child(1){
+  animation-delay: 0.5s;
+}
+h2 span:nth-child(2){
+  animation-delay: 1s;
+}
+h2 span:nth-child(3){
+  animation-delay: 1.5s;
+}
+h2 span:nth-child(4){
+  animation-delay: 2s;
+}
+h2 span:nth-child(5){
+  animation-delay: 2.5s;
+}
+h2 span:nth-child(6){
+  animation-delay: 2.75s;
+}
+
+.img{
+  border: 2px solid white;
+}
+
+.cognome{
+  color: rgba(124, 124, 124, 0.76);
+}
+
+.bg-black{
+  background-color: black;
+}
+    </style>
+    <title>CV Andrea Palladino</title>
+  </head>
+  <body>
+
+    <div class="container mt-5 d-flex d-md-none bg-dark">
+       <div class="row">
+         <div class="col-6">
+          <img src="media/circle-cropped.png" alt="" class="img-fluid mx-5 my-5 w-75">
+         </div>
+         <div class="col-6">
+           <h1 class="text-center text-white mt-3">ANDREA PALLADINO</h1>
+           <hr>
+           <p class="my-5  text-white h6"><span><i class="fas fa-mobile text-white mr-3"></i></span>344/0450952</p>
+            <p class="my-5  text-white h6"><span><i class="fas fa-at text-white mr-3"></i></span>andreagpalladino@gmail.com</p>
+            <p class="my-5  text-white h6"><span><i class="fas fa-map-marker-alt text-white mr-3"></i></span>Via R.Acerenza, Potenza</p>
+         </div>
+       </div>
+    </div>
+    
+    <div class="container mb-5 my-md-5">
+        <div class="row my-md-5">
+          <div class="col-8 blocco d-none d-md-block">
+            <img src="media/circle-cropped.png" alt="" class="img-fluid my-5 mx-5 w-75 img">
+            <video src="media/smoke.mp4" autoplay muted width="310" height="80"></video>
+            <h2 class="mx-5 h2">
+              <span>A</span>
+              <span>N</span>
+              <span>D</span>
+              <span>R</span>
+              <span>E</span>
+              <span>A</span>
+            </h2>
+            <h3 class="my-5 mx-5 cognome">Palladino</h3>
+            <p class="my-5 mr-5 ml-2 text-white h6">344/0450952<span><i class="fas fa-mobile text-white ml-3"></i></span></p>
+            <p class="my-5 mr-5 ml-2 text-white h6">agpalladino91@gmail.com<span><i class="fas fa-at text-white ml-3"></i></span></p>
+            <p class="my-5 mr-5 ml-2 text-white h6">Via R.Acerenza, Potenza<span><i class="fas fa-map-marker-alt text-white ml-3"></i></span></p>
+          </div>
+        </div>
+        <div class="row ">
+            <div class="col-3 bg-white"></div>
+            <div class="col-12 col-md-9 background">
+                <h1 class="my-5 text-center">CURRICULUM VITAE</h1>
+                <hr>
+                <h3 class="text-right font-weigth-bold my-5 mr-5 text-dark">INFO PERSONALI</h3>
+            </div>
+            <div class="col-3 bg-white"></div>
+            <div class="col-12 col-md-9 background">
+                <div class="float-right">
+                <p class="lead text-justify px-5 ml-md-3 text-white">Sono un ragazzo che desidera mettersi in gioco, specialmente in nuove attività, sia per accrescere la mia conoscenza e sia per dimostrare quanto versatile io sia. Riesco ad interfacciarmi con chi mi sta attorno instaurando e sviluppando ottime relazioni che mi portano a lavorare bene anche all'interno di un team.</p>
+                <p class="lead text-justify px-5 ml-md-3 text-white">Ho diversi hobby e adoro molto viaggiare. Dopo la laurea ho trascorso tre mesi a Londra sostenendo l'IELTS per poter proseguire i miei studi li, venendo accettato dalla Kingston University.</p>
+                <p class="lead text-justify px-5 ml-md-3 text-white">Quello che cerco è un ambiente lavorativo all'interno del quale possa crescere professionalmente e possa arricchirmi di esperienze che mi formino e rendano più bravo in quello che faccio.</p>
+               </div>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-white"></div>
+            <div class="col-12 col-md-9 background">
+              <hr class="">
+
+                <h3 class="text-right text-dark font-weigth-bold my-5 mr-5">ESPERIENZA LAVORATIVA</h2>
+                  <hr class="">
+
+                  <div class="col-md-6 offset-md-3">
+                    
+                    <ul class="timeline">
+                      <li>
+                        <a target="_blank" href="www.extremecomputer.it" class="text-dark h4">Extreme Computer di Luca Cinnella</a>
+                        <a href="#" class="float-right text-dark h4">dal 27 Gennaio, 2015  al 26/07/2015</a>
+                        <p class="text-white h5">Tirocinio sponsorizzato dal programma GARANZIA GIOVANI della REGIONE BASILICATA a tempo determinato</p>
+                      </li>
+                      <li>
+                        <a target="_blank" href="www.extremecomputer.it" class="text-dark h4">Extreme Computer di Luca Cinnella</a>
+                        <a href="#" class="float-right text-dark h4">dal 02 Settembre, 2015 al 31 Ottobre, 2017</a>
+                        <p class="text-white h5">Contratto di lavoro a Tempo Indeterminato come Tecnico Hardware - Assistenza Clienti</p>
+                      </li>
+                      <li>
+                        <a target="_blank" href="www.extremecomputer.it" class="text-dark h4">Extreme Computer s.r.l.s.</a>
+                        <a href="#" class="float-right text-dark h4">dal 13 Novembre, 2017 al 30 Giugno, 2020</a>
+                        <p class="text-white h5">Contratto di lavoro a Tempo Indeterminato come Tecnico Hardware - Responsabile Assistenza Tecnica - Assistenza Clienti</p>
+                      </li>
+                    </ul>
+                    <hr class="d-none d-md-flex">
+                  </div>
+            </div>
+        </div>
+       
+        <div class="row ">
+          
+            <div class="col-3 bg-white"></div>
+            <div class="col-12 col-md-9 background">
+              <div class="row">
+
+                <div class="col-12 col-md-5">
+                  <hr class="d-flex d-md-none">
+
+                  <h3 class="text-center text-dark font-weigth-bold my-5 ml-5 ">FORMAZIONE ACCADEMICA</h2>
+                    <hr class="d-flex d-md-none">
+                    <h4 class="text-center text-dark ml-5">Laurea Triennale in Ingegneria Civile</h4>
+                    <h5 class="text-center text-white ml-5">Università degli Studi della Basilicata - Potenza</h5>
+                    <p class="text-center text-white ml-5">
+                      Data Inizio: Settembre 2010 <br>
+                      Data Fine: Febbraio 2014
+                    </p>
+                </div>
+                <hr class="bar my-5 d-none d-md-flex">
+                <div class="col-12 col-md-5 mt-5 mt-md-0">
+                  <h3 class="text-center text-dark font-weigth-bold my-5 mr-5 d-none d-md-flex">FORMAZIONE ACCADEMICA</h2>
+                    <h4 class="text-center text-dark">Laurea Magistrale in Ingegneria Informatica</h4>
+                    <h5 class="text-center text-white">Università degli Studi Guglielmo Marconi - Roma</h5>
+                    <p class="text-center text-white">
+                      Data Inizio: Settembre 2015 <br>
+                      Data Fine: Novembre 2020
+                    </p>
+                </div>
+              </div>
+             <div class="row">
+               <div class="col-12">
+                 
+                   <p class="mx-5 text-white text-right h5 mt-5 mt-md-0"><span class="font-weight-bold h4 text-dark">MATURITA' CLASSICA</span> conseguita nel mese di Luglio 2010 presso il <span class="font-weight-bold h4 text-dark">LICEO CLASSICO V ORAZIO FLACCO</span> di Potenza</p>
+
+                   <p class="mx-5 text-white text-right h5 mt-5 mt-md-0"><span class="font-weight-bold h4 text-dark">FULL-STACK DEVELOPER MASTER</span> dal 27 Maggio 2020 al 12 Agosto 2020 presso <span class="font-weight-bold h4 text-dark">AULAB s.r.l.</span> di Bari</p>
+                  
+                   <hr class="d-none d-md-flex">
+               </div>
+             </div>   
+              <div class="row my-5 mx-5">
+                
+                <div class="col-12 col-md-6">
+                  
+                  <hr class="d-flex d-md-none">
+
+                  <h4 class="text-center text-dark">ABILITA'</h4>
+                  <h5 class="text-center text-white">Problem Solving</h5>
+                  <div class="progress my-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h5 class="text-center text-white">Team-working</h5>
+                  <div class="progress my-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h5 class="text-center text-white">Metodologie Agili</h5>
+                  <div class="progress my-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h4 class="text-center text-dark">LINGUE</h4>
+                  <h5 class="text-center text-white">Inglese</h5>
+                  <div class="progress my-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h5 class="text-center text-white">Giapponese</h5>
+                  <div class="progress my-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 35%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h5 class="text-center text-white">Spagnolo</h5>
+                  <div class="progress my-2">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mt-5">
+                  <h4 class="text-center text-dark mb-5">LINGUAGGI CONOSCIUTI</h4>
+                     <p class="lead h6 ml-5"><span><i class="fab fa-java mr-5"></i></span>Java</p>
+                     <p class="lead h6 ml-5"><span><i class="fab fa-js mr-5"></i></span>Javascript</p>
+                     <p class="lead h6 ml-5"><span><i class="fab fa-php mr-5"></i></span>Php</p>
+                     <p class="lead h6 ml-5"><span><i class="fab fa-css3-alt mr-5"></i></span>CSS</p>
+                     <p class="lead h6 ml-5"><span><i class="fab fa-html5 mr-5"></i></span>HTML5</p>
+                </div>
+                <div class="col-12 col-md-6 mt-5">
+                  <h4 class="text-center text-dark mb-5">FRAMEWORKS</h4>
+                    <p class="lead h6 ml-5"><span><i class="fab fa-bootstrap mr-5"></i></span>Bootstrap</p>
+                    <p class="lead h6 ml-5"><span><i class="fab fa-laravel mr-5"></i></span>Laravel</p>
+                    <p class="lead h6 ml-5"><span><i class="fab fa-vuejs mr-5"></i></span>Vue.js</p>
+                </div>
+                <div class="col-12 col-md-6 mt-5 d-block mx-auto">
+                  <h4 class="text-center text-dark">ABILITA' INFORMATICHE</h4>
+                    <p class="lead h6 ml-5"><span><i class="fab fa-microsoft mr-5"></i></i></span>Microsoft Office</p>
+                    <p class="lead h6 ml-5"><span><i class="fab fa-windows mr-5"></i></span>Windows</p>
+                    <p class="lead h6 ml-5"><span><i class="fab fa-apple mr-5"></i></span>MAC</p>
+                </div>
+                <hr class="d-flex d-md-none">
+
+              </div>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f18af2e46.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
